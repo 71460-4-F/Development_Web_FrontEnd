@@ -1,6 +1,4 @@
 
-
-//mostra/oculta menu sanduiche
 $(document).ready(function () {
     $("label").bind("click", function () {
         if(document.getElementById("menu").style.display == 'none'){
@@ -12,27 +10,11 @@ $(document).ready(function () {
     });
 });
 
-
-///////////////nomes
-$(function() {
-    var inputNome = [
-        "Maria",
-        "João",
-        "Tiago"
-    ];
-    $("#inputNome" ).autocomplete({
-        source: inputNome
-    });
-});
-
-
-
-//mostra mais pratos ao click
 var i = 0;
 var k = 0;
 var qtdPratos = 9;
 
-function mostrarMais() {//vetores com os dados: imagem, nome, preço 
+function mostrarMais() {
 
     var vetImgPrato=["img/prato7.jpg","img/prato8.jpg","img/prato9.jpg","img/prato10.jpg","img/prato11.jpg",
                      "img/prato12.jpg","img/prato13.jpg","img/prato14.jpg","img/prato15.jpg","img/prato16.jpg",
@@ -49,7 +31,6 @@ function mostrarMais() {//vetores com os dados: imagem, nome, preço
     var vetPrecoPrato=["R$ 7.50","R$ 42.30","R$ 12.60","R$ 12.60","R$ 14.20","R$ 11.80","R$ 20.60","R$ 17.30",
                       "R$ 14.60","R$ 13.50","R$ 15.40","R$ 14.20","R$ 11.80","R$ 20.60","R$ 17.30","R$ 14.20",
                       "R$ 11.80","R$ 20.60","R$ 42.30","R$ 12.60","R$ 12.60","R$ 14.20","R$ 11.80","R$ 20.60",];
-
     var textoItem;
     var span;
     var img;
@@ -62,7 +43,7 @@ function mostrarMais() {//vetores com os dados: imagem, nome, preço
         temp = i;
         idSpan = i;
 
-        span = document.createElement("span");//crio um id iterativo para o span e associo a cada preço e imagem
+        span = document.createElement("span");
         span.setAttribute("id", idSpan);
         document.querySelector("#conteiner").appendChild(span);
 
@@ -80,7 +61,7 @@ function mostrarMais() {//vetores com os dados: imagem, nome, preço
         h1.appendChild(textoItem);
         document.getElementById(idSpan).appendChild(h1);
 
-        $(document).ready(function () {//esconde botao mostar mais depois de ter carregado todas as imagnes
+        $(document).ready(function () {
             $("button").bind("click", function () {
                 if(vetPrecoPrato[i] == undefined){
                     document.getElementById("BtMostrarMais").style.display = 'none';
@@ -94,5 +75,3 @@ function mostrarMais() {//vetores com os dados: imagem, nome, preço
 }
 var botao = document.querySelector("#BtMostrarMais");
 botao.onclick = mostrarMais;
-
-//-----------fim------- + pratos 
