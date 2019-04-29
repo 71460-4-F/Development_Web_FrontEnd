@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mil Sabores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+</head>
+<body id="pageContatoActive">
+    <div>
+        <label class="sanduiche">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <nav>
+        <span>
+            <a id="nomeSite" href="index.html">Mil Sabores</a>
+        </span>
+        <ul id="menu">
+            <li><a class="aba1" href="index.html">Início</a></li>
+            <li><a class="aba2" href="sobre.html">Sobre</a></li>
+            <li><a class="aba3" href="pratos.html">Pratos</a></li>
+            <li><a class="aba4" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <p id="subTitle">Fale Conosco</p>
+    <section class="secInfo" id="info" >
+        <h3>Preencha o Formulário</h3>
+        <p>
+            Em caso de dúvidas, sugestões ou reclamações, entre em contato conosco pelo formulário abaixo. <br> Nossos atendentes 
+            estão à disposição.<br>
+        </p>
+    </section>
+
+
+    <form action="">
+        Nome: <br><input id="inputNome" type="text" name="nome"  placeholder="Digite seu nome" alt="ok"><br>
+        Email:<br><input id="inputEmail" type="email" name="email"  placeholder="Email para contato"><br>
+        Telefone: <br><input id="inputTel" class="tel" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx"><br>
+        Mensagem:<br><textarea id="textarea" rows="5" style="max-width: 80%;"; height: 123px; placeholder="Deixe sua mensagem aqui :)"></textarea><br>
+        <input type="submit" onclick="alert('Mensagem enviada!\nEm breve entraremos em contato.')" value="Enviar">
+    </form>
+
+    <footer>
+        <span>
+            <a href="https://www.tripadvisor.com.br/" title="TripAdvisor"><img id="iconsLink" src="img/tripAdvisor.Webp"/></a>
+        </span>
+        <span>
+            <a href="https://www.facebook.com/" title="Facebook"><img id="iconsLink" src="img/facebook.Webp"/></a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/" title="Instagram"><img id="iconsLink" src="img/instagram.Webp"/></a>
+        </span>
+            <br>By Tiago A. Fontenele <br>
+                Fone: (99) 9 9999-9999 <br>
+                2019
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jQueryMask.js"></script>
+    <script src="js/scriptsJQuery.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</body>
+</html>

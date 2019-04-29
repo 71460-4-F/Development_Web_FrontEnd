@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jQueryMask.js"></script>
+    <script src="js/scriptsJQuery.js"></script>
+
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+	$(function() {
+		var esportes = [
+			"Natação",
+			"Futebol",
+			"Vôlei",
+			"Basquete"
+		];
+		$("#esporte" ).autocomplete({
+			source: esportes
+		});
+	});
+	</script>
+</head>
+<body>
+	<input type="text" id="esporte" placeholder="Informe um esporte"/>
+</body>
+</html>
